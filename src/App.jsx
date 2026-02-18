@@ -1,11 +1,19 @@
 import { Button } from "flowbite-react";
+import Navbar from "./layouts/Navbar";
+import ScrollToTop from "./ScrollToTop";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="p-20 flex justify-center bg-gray-50 min-h-screen">
-      <Button color="blue" pill>
-        test! 🚀
-      </Button>
-    </div>
+    <>
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<h1>Beranda</h1>} />
+        <Route path="/tentang" element={<h1>Tentang</h1>} />
+        <Route path="/produk" element={<h1>Produk</h1>} />
+        <Route path="/kontak" element={<h1>Kontak</h1>} />
+      </Routes>
+    </>
   );
 }
