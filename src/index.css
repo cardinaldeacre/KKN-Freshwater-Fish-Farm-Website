@@ -5,13 +5,13 @@
 :root {
 	--background: 255 255 255;
 	--foreground: 0 0 0;
+	font-family: 'Lexend', sans-serif;
 	background-color: white;
 	color: black;
 }
 
 body {
 	margin: 0;
-	font-family: sans-serif;
 	background-color: white;
 	color: black;
 }
