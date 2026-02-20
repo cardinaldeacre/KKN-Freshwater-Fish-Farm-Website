@@ -20,26 +20,32 @@ export default function Activities() {
     ];
 
     return (
-        <section>
-            <div className="flex max-w-screen items-center h-24 bg-blue-950 ">
-                <h2 className="text-2xl mx-auto justify-center font-bold text-white text-center">Aktivitas Kami</h2>
+        <section className="bg-white dark:bg-gray-900 transition-colors duration-500">
+            <div className="flex items-center h-24 bg-blue-950 shadow-inner">
+                <h2 className="text-2xl md:text-3xl mx-auto font-bold text-white text-center">
+                    Aktivitas Kami
+                </h2>
             </div>
-            <div className="grid-cols-3 mx-auto items-center px-2 md:px2 sm:px-2 py-10 max-w-full grid gap-10">
-                {activities.map((activity, index) => (
-                    <Card
-                        className="max-w-sm mx-auto"
-                        imgAlt="Meaningful alt text for an image that is not purely decorative"
-                        imgSrc={images[index]}
-                    >
-                        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            {activities[index].title}
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            {activities[index].description}
-                        </p>
-                    </Card>
-                ))}
+
+            <div className="container mx-auto px-4 py-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                    {activities.map((activity, index) => (
+                        <Card
+                            key={index}
+                            className="max-w-full w-full sm:max-w-sm border-none shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800"
+                            imgAlt={activity.title}
+                            imgSrc={images[index % images.length]}
+                        >
+                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-100">
+                                {activity.title}
+                            </h5>
+                            <p className="font-normal text-gray-600 dark:text-gray-400 leading-relaxed">
+                                {activity.description}
+                            </p>
+                        </Card>
+                    ))}
+                </div>
             </div>
-        </section >
+        </section>
     )
 }
