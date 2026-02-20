@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite-react";
+@plugin "tailwindcss-animate";
 
 :root {
 	--background: 255 255 255;
@@ -14,4 +15,14 @@ body {
 	margin: 0;
 	background-color: white;
 	color: black;
+}
+
+.darkveil-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
 }
