@@ -168,7 +168,7 @@ const PillNav = ({
         <button
           ref={hamburgerRef}
           onClick={toggleMobileMenu}
-          className="md:hidden p-2 flex flex-col items-center justify-center gap-1"
+          className="md:hidden p-4 flex flex-col items-center justify-center gap-1"
         >
           <div className={`w-6 h-0.5 transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''} bg-blue-600`}></div>
           <div className={`w-6 h-0.5 transition-all ${isMobileMenuOpen ? 'opacity-0' : ''} bg-blue-600`}></div>
