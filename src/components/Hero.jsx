@@ -27,7 +27,7 @@ export default function Hero() {
     ];
 
     return (
-        <section className="overflow-hidden">
+        <section className="overflow-hidden py-10">
             <div className="container mx-auto px-4 py-8 lg:py-16">
                 <div className="flex justify-center md:justify-start animate-in fade-in slide-in-from-top-4 duration-700">
                     <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
