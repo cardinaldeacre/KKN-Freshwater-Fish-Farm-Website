@@ -6,7 +6,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import LogoLoop from "./LogoLoop"
+import LogoLoop from "./ui/LogoLoop"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { PlayCircle, ChevronRight } from "lucide-react"
