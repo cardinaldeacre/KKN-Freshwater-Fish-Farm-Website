@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 const PillNav = ({
   logo,
   logoAlt = 'Logo',
-  title = '', // Prop Baru: Teks Judul
+  title = '',
   items,
   activeHref,
   className = '',
@@ -14,7 +14,7 @@ const PillNav = ({
   pillColor = '#060010',
   hoveredPillTextColor = '#060010',
   pillTextColor,
-  rightElement, // Prop Baru: Untuk ThemeToggle
+  rightElement,
   onMobileMenuClick,
   initialLoadAnimation = true
 }) => {
@@ -124,8 +124,8 @@ const PillNav = ({
   };
 
   return (
-    <div className={`fixed top-4 left-0 w-full z-[100] px-4 flex justify-center ${className}`} style={cssVars}>
-      <nav className="flex items-center gap-2 bg-[var(--base)] p-1 rounded-full shadow-2xl border border-gray-200 dark:border-blue-900/30">
+    <div className={`fixed top-4 left-0 w-full z-100 px-4 flex justify-center ${className}`} style={cssVars}>
+      <nav className="flex items-center gap-2 bg-(--base) p-1 rounded-full shadow-2xl border border-gray-200 dark:border-blue-900/30">
 
         <Link to="/" className="flex items-center gap-3 px-4 py-2 hover:opacity-80 transition-opacity">
           <img src={logo} alt={logoAlt} className="h-8 w-8 rounded-full object-cover" />
@@ -135,23 +135,23 @@ const PillNav = ({
         </Link>
 
         <div ref={navItemsRef} className="hidden md:flex items-center">
-          <ul className="list-none flex items-center m-0 p-0 gap-[var(--pill-gap)]">
+          <ul className="list-none flex items-center m-0 p-0 gap-(--pill-gap)">
             {items.map((item, i) => (
               <li key={item.href} className="h-full">
                 <Link
                   to={item.href}
-                  className="relative overflow-hidden inline-flex items-center justify-center px-5 h-[40px] no-underline rounded-full font-semibold text-sm uppercase tracking-wide transition-colors"
+                  className="relative overflow-hidden inline-flex items-center justify-center px-5 h-10 no-underline rounded-full font-semibold text-sm uppercase tracking-wide transition-colors"
                   style={{ background: 'var(--pill-bg)', color: 'var(--pill-text)' }}
                   onMouseEnter={() => handleEnter(i)}
                   onMouseLeave={() => handleLeave(i)}
                 >
-                  <span className="hover-circle absolute left-1/2 bottom-0 rounded-full z-[1] block w-0 h-0"
+                  <span className="hover-circle absolute left-1/2 bottom-0 rounded-full z-1 block w-0 h-0"
                     ref={el => (circleRefs.current[i] = el)}
                     style={{ background: 'var(--base)', willChange: 'transform' }} />
-                  <span className="pill-label relative z-[2]">{item.label}</span>
-                  <span className="pill-label-hover absolute z-[3] opacity-0" style={{ color: 'var(--hover-text)' }}>{item.label}</span>
+                  <span className="pill-label relative z-2">{item.label}</span>
+                  <span className="pill-label-hover absolute z-3 opacity-0" style={{ color: 'var(--hover-text)' }}>{item.label}</span>
                   {activeHref === item.href && (
-                    <span className="absolute left-1/2 -bottom-1 w-1 h-1 bg-[var(--base)] rounded-full -translate-x-1/2" />
+                    <span className="absolute left-1/2 -bottom-1 w-1 h-1 bg-(--base) rounded-full -translate-x-1/2" />
                   )}
                 </Link>
               </li>
@@ -178,7 +178,7 @@ const PillNav = ({
 
       <div
         ref={mobileMenuRef}
-        className="md:hidden absolute top-[4.5em] left-4 right-4 rounded-[27px] shadow-2xl z-[998] origin-top overflow-hidden border border-gray-100 dark:border-blue-900/50"
+        className="md:hidden absolute top-[4.5em] left-4 right-4 rounded-[27px] shadow-2xl z-998 origin-top overflow-hidden border border-gray-100 dark:border-blue-900/50"
         style={{
           background: 'var(--base, #f0f0f0)',
           visibility: 'hidden'
