@@ -1,35 +1,28 @@
-
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import { Link } from "react-router-dom";
 import icon from './../assets/ikan_icon.png'
 import ThemeToggle from "@/components/ThemeToggle";
+import PillNav from "@/components/ui/PillNav";
+import { useLocation } from "react-router-dom";
 
 export default function Navigation() {
-    return (
-        <div className="sticky top-0 left-0 w-full z-50">
+    const location = useLocation();
 
-            <Navbar fluid rounded>
-                <NavbarBrand as={Link} href="https://flowbite-react.com">
-                    <img src={icon} className="mr-3 h-6 sm:h-9 rounded-3xl" alt="Flowbite React Logo" />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Budidaya Ikan Air Tawar</span>
-                </NavbarBrand>
-                <NavbarToggle />
-                <NavbarCollapse>
-                    <NavbarLink as={Link} to="/" active>
-                        Beranda
-                    </NavbarLink>
-                    <NavbarLink as={Link} to="/tentang">
-                        Tentang
-                    </NavbarLink>
-                    <NavbarLink as={Link} to="/produk">
-                        Produk
-                    </NavbarLink>
-                    <NavbarLink as={Link} to="/kontak">
-                        Kontak
-                    </NavbarLink>
-                </NavbarCollapse>
-                <ThemeToggle />
-            </Navbar>
-        </div>
+    return (
+        <PillNav
+            logo={icon}
+            title="Budidaya Ikan Air Tawar" // Memasukkan teks judul
+            items={[
+                { label: 'Beranda', href: '/' },
+                { label: 'Tentang', href: '/tentang' },
+                { label: 'Produk', href: '/produk' },
+                { label: 'Kontak', href: '/kontak' }
+            ]}
+            activeHref={location.pathname}
+            rightElement={<ThemeToggle />} // Memasukkan ThemeToggle
+            // Warna disesuaikan dengan tema biru kamu
+            baseColor="var(--color-pond-dark)"
+            pillColor="#ffffff"
+            pillTextColor="#020617"
+            hoveredPillTextColor="#ffffff"
+        />
     );
 }
