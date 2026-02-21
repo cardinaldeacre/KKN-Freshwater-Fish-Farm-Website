@@ -20,7 +20,7 @@ export default function Activities() {
     ];
 
     return (
-        <section className="bg-white dark:bg-gray-900 transition-colors duration-500">
+        <section>
             <div className="flex items-center h-24 bg-blue-950 shadow-inner">
                 <h2 className="text-2xl md:text-3xl mx-auto font-bold text-white text-center">
                     Aktivitas Kami
