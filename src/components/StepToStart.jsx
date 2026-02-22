@@ -20,13 +20,13 @@ export default function StepsToStart() {
     ];
 
     return (
-        <section className="bg-white py-20 px-6">
+        <section className="py-20 px-6">
             <div className="container mx-auto text-center max-w-4xl">
                 <div className="space-y-4 mb-16">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 tracking-tight">
-                        Langkah Memulai Budidaya Ikan Anda
+                    <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                        Langkah <span className="text-blue-700">Memulai</span> Budidaya Ikan Anda
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
                         Solusi tepat untuk pengelolaan kolam ikan yang cerdas dan modern di Desa Ngloning.
                     </p>
                 </div>
@@ -39,10 +39,10 @@ export default function StepsToStart() {
                             </div>
 
                             <div className="space-y-3">
-                                <h3 className="text-xl font-bold text-blue-950">
+                                <h3 className="text-xl font-bold">
                                     {step.title}
                                 </h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">
+                                <p className="text-gray-400 text-md leading-relaxed">
                                     {step.description}
                                 </p>
                             </div>
