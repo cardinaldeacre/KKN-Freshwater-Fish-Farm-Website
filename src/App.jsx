@@ -1,8 +1,9 @@
 import { Button } from "flowbite-react";
 import Navbar from "./layouts/Navbar";
-import ScrollToTop from "./ScrollToTop";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Footer from "./layouts/Footer";
+import ScrollToTop from "./layouts/ScrollToTop";
 
 export default function App() {
   return (
@@ -15,6 +16,8 @@ export default function App() {
         <Route path="/produk" element={<h1>Produk</h1>} />
         <Route path="/kontak" element={<h1>Kontak</h1>} />
       </Routes>
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }
