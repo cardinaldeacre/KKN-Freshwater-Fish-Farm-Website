@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 import imgNila from '@/assets/img_landscape.png';
 import imgLele from '@/assets/rame.png';
 
-export default function FeaturedFish() {
+export default function Activities() {
     return (
         <section className="bg-blue-950 py-16 px-6 overflow-hidden">
             <div className="container mx-auto">
