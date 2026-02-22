@@ -32,7 +32,7 @@ export default function Hero() {
                 <div className="flex justify-center md:justify-start animate-in fade-in slide-in-from-top-4 duration-700">
                     <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
                         <Badge className="rounded-full px-3 py-0.5 mr-3 bg-blue-600">Baru</Badge>
-                        <span className="text-sm font-medium">Panduan Sukses Panen Ikan Nila 2026</span>
+                        <span className="text-sm font-medium">Panduan Sukses Panen Ikan Lele 2026</span>
                         <ChevronRight className="ml-2 w-4 h-4" />
                     </a>
                 </div>

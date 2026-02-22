@@ -1,29 +1,42 @@
-import { Mail, Phone, MapPin, Instagram, Facebook, Youtube, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, Youtube, Send, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import icon from './../assets/ikan_icon.png';
 import img100 from '@/assets/100.png'
 import imgkkn from '@/assets/kkn.png'
 import imglpm from '@/assets/lpm.png'
 import imgunida from '@/assets/unida.png'
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 text-white pt-16 pb-8 px-6 transition-colors duration-500">
+        <footer className="bg-slate-900 text-white pb-8 px-6 transition-colors duration-500">
             <div className="container mx-auto">
 
-                <div className="flex flex-col items-center text-center space-y-6 mb-16 border-b border-blue-900 pb-12">
-                    <h2 className="text-2xl md:text-3xl font-bold max-w-2xl leading-tight">
-                        Tetap Terhubung Untuk Tips & <br className="hidden md:block" /> Info Budidaya Ikan Terbaru
-                    </h2>
-                    <div className="flex w-full max-w-md items-center space-x-2 bg-blue-900/50 p-1.5 rounded-full border border-blue-800">
-                        <input
-                            type="email"
-                            placeholder="Alamat Email Anda"
-                            className="flex-1 bg-transparent border-none focus:ring-0 px-4 text-sm placeholder:text-blue-300"
-                        />
-                        <button className="bg-blue-600 hover:bg-blue-500 p-2.5 rounded-full transition-all shadow-lg">
-                            <Send className="w-5 h-5" />
-                        </button>
+                <div className="flex flex-col items-center text-center space-y-6 mb-12 border-b border-blue-900 pb-12">
+                    <div className="container mx-auto">
+                        <div className="flex flex-col items-center text-center space-y-3">
+                            <div className="w-16 h-16 bg-linear-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                                <Instagram className="text-white w-8 h-8" />
+                            </div>
+
+                            <div className="space-y-2">
+                                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 dark:text-white">
+                                    Ikuti Kami di Instagram
+                                </h2>
+                                <p className="text-gray-500 dark:text-gray-400 text-lg">
+                                    Dapatkan update harian seputar perkembangan budidaya <br className="hidden md:block" /> dan kegiatan KKN kami di Desa Ngloning.
+                                </p>
+                            </div>
+
+                            <Button
+                                variant="outline"
+                                className="rounded-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all group"
+                                onClick={() => window.open('https://www.instagram.com/budidayaikan_desangloning', '_blank')}
+                            >
+                                @kkn24_ngloning
+                                <ExternalLink className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
@@ -47,15 +60,6 @@ export default function Footer() {
                                 <p className="text-blue-100/70 text-sm">kkn24.ngloning@gmail.com</p>
                             </div>
                         </div>
-
-                        <div className="mt-auto pt-6">
-                            <div className="flex items-center justify-center md:justify-start gap-4">
-                                <img src={img100} alt="Logo 100%" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                                <img src={imgkkn} alt="Logo KKN" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                                <img src={imglpm} alt="Logo LPM" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                                <img src={imgunida} alt="Logo UNIDA Gontor" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                            </div>
-                        </div>
                     </div>
 
                     <div className="flex flex-col items-center space-y-4">
@@ -64,10 +68,11 @@ export default function Footer() {
                         <p className="text-blue-100/60 text-sm text-center max-w-xs leading-relaxed">
                             Membangun kemandirian ekonomi desa melalui edukasi dan inovasi budidaya ikan air tawar yang berkelanjutan.
                         </p>
-                        <div className="flex gap-4 pt-2">
-                            <a href="#" className="p-2 bg-blue-900 rounded-full hover:bg-blue-600 transition-colors"><Instagram className="w-4 h-4" /></a>
-                            <a href="#" className="p-2 bg-blue-900 rounded-full hover:bg-blue-600 transition-colors"><Facebook className="w-4 h-4" /></a>
-                            <a href="#" className="p-2 bg-blue-900 rounded-full hover:bg-blue-600 transition-colors"><Youtube className="w-4 h-4" /></a>
+                        <div className="flex items-center justify-center md:justify-start gap-4">
+                            <img src={img100} alt="Logo 100%" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                            <img src={imgkkn} alt="Logo KKN" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                            <img src={imglpm} alt="Logo LPM" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                            <img src={imgunida} alt="Logo UNIDA Gontor" className="h-8 w-8 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
                         </div>
                     </div>
 
