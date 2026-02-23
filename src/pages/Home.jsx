@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import { Carousel } from "flowbite-react";
 import StepsToStart from "@/components/StepToStart";
-import InstagramFeed from "@/components/InstagramFeed";
 
 export default function Home() {
     return (
@@ -12,7 +11,6 @@ export default function Home() {
             <Activities />
             <StepsToStart />
             <Products />
-            <InstagramFeed />
         </>
     )
 }
