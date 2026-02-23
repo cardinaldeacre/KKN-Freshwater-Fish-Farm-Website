@@ -9,7 +9,7 @@ export default function Navigation() {
     return (
         <PillNav
             logo={icon}
-            title="Budidaya Ikan Air Tawar" // Memasukkan teks judul
+            title="Budidaya Ikan Air Tawar"
             items={[
                 { label: 'Beranda', href: '/' },
                 { label: 'Tentang', href: '/tentang' },
@@ -17,8 +17,7 @@ export default function Navigation() {
                 { label: 'Kontak', href: '/kontak' }
             ]}
             activeHref={location.pathname}
-            rightElement={<ThemeToggle />} // Memasukkan ThemeToggle
-            // Warna disesuaikan dengan tema biru kamu
+            rightElement={<ThemeToggle />}
             baseColor="var(--color-pond-dark)"
             pillColor="#ffffff"
             pillTextColor="#020617"
