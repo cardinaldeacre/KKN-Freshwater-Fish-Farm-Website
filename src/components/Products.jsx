@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import TiltedCard from "@/components/ui/TiltedCard";
 import { ChevronRight, ShoppingCart } from "lucide-react";
 import imgLele from '@/assets/rame.png'; // Gambar Ikan Lele Segar
-import imgPakan from '@/assets/img_landscape.png';
-import imgNila from '@/assets/img_landscape.png';
+import imgPakan from '@/assets/img_landscape.jpeg';
+import imgNila from '@/assets/img_landscape.jpeg';
 
 export default function Products() {
     const products = [

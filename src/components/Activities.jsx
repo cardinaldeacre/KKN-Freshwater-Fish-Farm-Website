@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import imgNila from '@/assets/img_landscape.png';
+import imgNila from '@/assets/img_landscape.jpeg';
 import imgLele from '@/assets/rame.png';
 
 export default function Activities() {

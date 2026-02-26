@@ -2,6 +2,7 @@ import { Instagram, Mail, Linkedin } from "lucide-react";
 import imghariyanto from '@/assets/hariyanto.png';
 import imgsomat from '@/assets/somat.png';
 import imgbu from '@/assets/bu.png';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Manager() {
     const managers = [
@@ -19,9 +20,9 @@ export default function Manager() {
         },
         {
             name: "Nama Pengelola 3",
-            role: "Teknis & Kualitas Air",
+            role: "Administrasi & Pemasaran",
             image: imgbu,
-            bio: "Mengawasi sistem sirkulasi dan standarisasi parameter air di seluruh kolam."
+            bio: "Mengelola sistem administrasi transaksi dan strategi pemasaran untuk memperluas jaringan kemitraan dagang."
         }
     ];
 
@@ -67,17 +68,11 @@ export default function Manager() {
                                 <p className="text-slate-300 text-xs md:text-sm line-clamp-2 md:line-clamp-none mb-3 md:mb-4">
                                     {manager.bio}
                                 </p>
-                                <div className="flex gap-3 md:gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                                {/* <div className="flex gap-3 md:gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                                     <a href="#" className="text-white hover:text-blue-400 transition-colors">
-                                        <Instagram size={16} className="md:w-4.5" />
+                                        <FaWhatsapp size={16} className="md:w-4.5" />
                                     </a>
-                                    <a href="#" className="text-white hover:text-blue-400 transition-colors">
-                                        <Linkedin size={16} className="md:w-4.5" />
-                                    </a>
-                                    <a href="#" className="text-white hover:text-blue-400 transition-colors">
-                                        <Mail size={16} className="md:w-4.5" />
-                                    </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

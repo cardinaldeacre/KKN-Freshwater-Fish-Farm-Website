@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Database, MapPin, Target, ShieldCheck, Fish } from "lucide-react";
 import imgTeam from '@/assets/rame.png';
-import imgPond from '@/assets/img_landscape.png';
+import imgPond from '@/assets/img_landscape.jpeg';
 
 export default function Summarize() {
     const stats = [
@@ -22,29 +22,36 @@ export default function Summarize() {
                         <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-blue-600 rounded-3xl -z-10 animate-pulse"></div>
                     </div>
 
-                    <div className="space-y-6">
+                    <div className="space-y-3">
                         <Badge variant="outline" className="text-blue-600 border-blue-600 px-4 py-1 rounded-full uppercase font-bold tracking-widest">
-                            Visi & Misi
+                            Profil Strategis
                         </Badge>
-                        <h2 className="text-4xl font-extrabold leading-tight">
-                            Membangun Kemandirian Ekonomi Lewat <span className="text-blue-600">Budidaya Lokal</span>
+
+                        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                            Dedikasi untuk <span className="text-blue-600">Kualitas & Keberlanjutan</span> Produksi
                         </h2>
-                        <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                            Program KKN Kelompok 24 Universitas Darussalam Gontor di Desa Ngloning berfokus pada modernisasi teknik budidaya ikan air tawar. Kami percaya bahwa dengan edukasi yang tepat, potensi alam desa bisa menjadi sumber ekonomi yang berkelanjutan bagi seluruh warga.
-                        </p>
+
+                        <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
+                            <p>
+                                Berdiri di atas komitmen untuk memaksimalkan potensi perikanan Desa Ngloning, kami hadir sebagai mitra strategis dalam penyediaan komoditas air tawar unggulan yang dikelola secara sistematis.
+                            </p>
+                            <p>
+                                Kami mengintegrasikan manajemen kolam yang terukur dengan standar operasional modern guna memastikan stabilitas suplai bagi seluruh mitra dagang kami. Fokus kami bukan hanya pada hasil panen, melainkan pada pembangunan rantai pasok yang sehat, jujur, dan memberikan nilai tambah bagi ekonomi lokal.
+                            </p>
+                        </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                             <div className="flex items-start gap-3">
                                 <div className="p-2 bg-blue-100 rounded-lg text-blue-600"><ShieldCheck /></div>
                                 <div>
-                                    <h4 className="font-bold text-blue-950 dark:text-white">Kualitas Terjamin</h4>
+                                    <h4 className="font-bold ">Kualitas Terjamin</h4>
                                     <p className="text-sm text-slate-500">Ikan dipelihara dengan standar kebersihan tinggi.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
                                 <div className="p-2 bg-blue-100 rounded-lg text-blue-600"><Target /></div>
                                 <div>
-                                    <h4 className="font-bold text-blue-950 dark:text-white">Berorientasi Desa</h4>
+                                    <h4 className="font-bold">Berorientasi Desa</h4>
                                     <p className="text-sm text-slate-500">Fokus pada kesejahteraan masyarakat Ngloning.</p>
                                 </div>
                             </div>

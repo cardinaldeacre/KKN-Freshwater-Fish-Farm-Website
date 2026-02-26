@@ -3,7 +3,7 @@ import Manager from "@/components/Manager";
 
 export default function About() {
     return (
-        <div className="min-h-screen bg-blue-50">
+        <div className="min-h-screen">
             <Summarize />
             <Manager />
         </div>

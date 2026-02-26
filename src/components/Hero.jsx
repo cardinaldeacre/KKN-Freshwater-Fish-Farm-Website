@@ -10,7 +10,7 @@ import LogoLoop from "./ui/LogoLoop"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { PlayCircle, ChevronRight } from "lucide-react"
-import img1 from '@/assets/img_landscape.png'
+import img1 from '@/assets/img_landscape.jpeg'
 import img2 from '@/assets/rame.png'
 import img100 from '@/assets/100.png'
 import imgkkn from '@/assets/kkn.png'
