@@ -83,7 +83,7 @@ export default function Contact() {
                     <div className="animate-in fade-in slide-in-from-right-10 duration-1000 order-1 md:order-2 w-full">
                         <div className="relative w-full shadow-2xl rounded-3xl overflow-hidden border-4 border-white dark:border-blue-900/30 aspect-video">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d336.333627314326!2d111.4154532950718!3d-7.986928141930346!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1771858333758!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.148960832426!2d111.41458605844508!3d-7.98767879275378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e797514cce51ed9%3A0xca4cd842637f816!2sBudidaya%20Ikan%20Air%20Tawar%20Desa%20Ngloning!5e1!3m2!1sid!2sid!4v1772080843707!5m2!1sid!2sid"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
