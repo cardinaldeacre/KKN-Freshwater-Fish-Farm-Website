@@ -36,7 +36,7 @@ export default function Products() {
             </div>
 
             <div className="container mx-auto px-4 py-12">
-                <div className="flex flex-col lg:flex-row items-center gap-12 bg-slate-50 dark:bg-slate-900 rounded-3xl p-8 mb-16 shadow-sm border border-slate-100 dark:border-blue-900/30">
+                <div className="flex flex-col lg:flex-row items-center gap-12 bg-blue-950 rounded-3xl p-8 mb-16 shadow-sm border border-slate-100 dark:border-blue-900/30">
                     <div className="w-full lg:w-1/2 flex justify-center">
                         <TiltedCard
                             imageSrc={products[0].image}
@@ -78,7 +78,7 @@ export default function Products() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
                     {products.slice(1).map((product, index) => (
-                        <div key={index} className="flex flex-col items-center bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md border border-gray-50 dark:border-blue-900/20 group">
+                        <div key={index} className="flex flex-col items-center bg-blue-950 p-6 rounded-2xl shadow-md border border-gray-50 dark:border-blue-900/20 group">
                             <div className="w-full mb-6">
                                 <TiltedCard
                                     imageSrc={product.image}
