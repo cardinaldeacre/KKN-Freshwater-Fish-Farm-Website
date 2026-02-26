@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 text-white pb-8 px-6 transition-colors duration-500">
+        <footer className="bg-blue-950 text-white pb-8 px-6 transition-colors duration-500">
             <div className="container mx-auto">
 
                 <div className="flex flex-col items-center text-center space-y-6 mb-12 border-b border-blue-900 pb-12">
@@ -47,17 +47,13 @@ export default function Footer() {
                             <div className="flex items-start justify-center md:justify-start gap-3">
                                 <MapPin className="w-5 h-5 text-blue-400 mt-1" />
                                 <p className="text-blue-100/70 text-sm leading-relaxed">
-                                    Desa Ngloning, Kec. Slahung, <br />
+                                    Dsn. Gragakan, Ds.Ngloning, Kec. Slahung,<br />
                                     Kabupaten Ponorogo, Jawa Timur
                                 </p>
                             </div>
                             <div className="flex items-center justify-center md:justify-start gap-3">
                                 <Phone className="w-5 h-5 text-blue-400" />
-                                <p className="text-blue-100/70 text-sm">+62 812 3456 7890</p>
-                            </div>
-                            <div className="flex items-center justify-center md:justify-start gap-3">
-                                <Mail className="w-5 h-5 text-blue-400" />
-                                <p className="text-blue-100/70 text-sm">kkn24.ngloning@gmail.com</p>
+                                <p className="text-blue-100/70 text-sm">+62 813-3077-4174</p>
                             </div>
                         </div>
                     </div>
