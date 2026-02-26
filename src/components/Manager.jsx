@@ -7,19 +7,19 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Manager() {
     const managers = [
         {
-            name: "Nama Pengelola 1",
+            name: "Pak Hariyanto",
             role: "Ketua Pengelola Kolam",
             image: imghariyanto,
             bio: "Bertanggung jawab atas manajemen operasional dan strategi pengembangan kolam."
         },
         {
-            name: "Nama Pengelola 2",
+            name: "Pak Somat",
             role: "Ahli Nutrisi & Pakan",
             image: imgsomat,
             bio: "Fokus pada optimalisasi pakan dan kesehatan ikan untuk hasil panen berkualitas."
         },
         {
-            name: "Nama Pengelola 3",
+            name: "Bu Elvi",
             role: "Administrasi & Pemasaran",
             image: imgbu,
             bio: "Mengelola sistem administrasi transaksi dan strategi pemasaran untuk memperluas jaringan kemitraan dagang."
