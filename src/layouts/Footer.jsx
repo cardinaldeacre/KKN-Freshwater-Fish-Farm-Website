@@ -82,6 +82,7 @@ export default function Footer() {
                         <Link to="/tentang" className="text-blue-100/70 hover:text-white transition-colors text-sm">Tentang</Link>
                         <Link to="/produk" className="text-blue-100/70 hover:text-white transition-colors text-sm">Produk</Link>
                         <Link to="/kontak" className="text-blue-100/70 hover:text-white transition-colors text-sm">Hubungi Kami</Link>
+                        <Link to="/panduan" className="text-blue-100/70 hover:text-white transition-colors text-sm">Panduan Budidaya</Link>
                     </div>
                 </div>
 
