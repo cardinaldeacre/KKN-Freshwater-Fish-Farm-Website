@@ -28,7 +28,7 @@ export default function Hero() {
 
     return (
         <section className="overflow-hidden py-10">
-            <div className="container mx-auto px-4 py-8 lg:py-16">
+            <div className="container mx-auto px-4 py-11 lg:py-16">
                 <div className="flex justify-center md:justify-start animate-in fade-in slide-in-from-top-4 duration-700">
                     <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
                         <Badge className="rounded-full px-3 py-0.5 mr-3 bg-blue-600">Baru</Badge>
@@ -43,7 +43,7 @@ export default function Hero() {
                             Investasi Masa Depan lewat <span className="text-blue-600">Budidaya Ikan</span>
                         </h1>
 
-                        <p className="animate-in fade-in slide-in-from-bottom-5 delay-200 duration-1000 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-center md:text-left">
+                        <p className="animate-in fade-in slide-in-from-bottom-5 delay-200 duration-1000 text-lg font-normal text-slate-500 lg:text-xl text-center md:text-left">
                             Kami fokus pada inovasi teknologi budidaya air tawar untuk membantu masyarakat mencapai kemandirian ekonomi dan pangan yang berkelanjutan.
                         </p>
                         <div className="animate-in fade-in slide-in-from-bottom-5 delay-300 duration-1000 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
