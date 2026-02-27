@@ -14,7 +14,8 @@ export default function Navigation() {
                 { label: 'Beranda', href: '/' },
                 { label: 'Tentang', href: '/tentang' },
                 { label: 'Produk', href: '/produk' },
-                { label: 'Kontak', href: '/kontak' }
+                { label: 'Kontak', href: '/kontak' },
+                { label: 'Panduan', href: '/panduan' }
             ]}
             activeHref={location.pathname}
             rightElement={<ThemeToggle />}
