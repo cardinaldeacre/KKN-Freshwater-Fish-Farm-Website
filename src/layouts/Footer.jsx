@@ -46,14 +46,18 @@ export default function Footer() {
                         <div className="space-y-4">
                             <div className="flex items-start justify-center md:justify-start gap-3">
                                 <MapPin className="w-5 h-5 text-blue-400 mt-1" />
-                                <p className="text-blue-100/70 text-sm leading-relaxed">
-                                    Dsn. Gragakan, Ds.Ngloning, Kec. Slahung,<br />
-                                    Kabupaten Ponorogo, Jawa Timur
-                                </p>
+                                <a href="https://maps.app.goo.gl/js6JEHXKfMQ8Nqcr7" target="_blank" rel="noopener noreferrer" className="text-blue-100/70 text-sm leading-relaxed hover:text-blue-300 transition-colors">
+                                    <p className="text-blue-100/70 text-sm leading-relaxed">
+                                        Dsn. Gragakan, Ds.Ngloning, Kec. Slahung,<br />
+                                        Kabupaten Ponorogo, Jawa Timur
+                                    </p>
+                                </a>
                             </div>
                             <div className="flex items-center justify-center md:justify-start gap-3">
                                 <Phone className="w-5 h-5 text-blue-400" />
-                                <p className="text-blue-100/70 text-sm">+62 813-3077-4174</p>
+                                <a href="https://wa.me/+6281330774174?text=Halo%20Pengelola%20Budiya%20Ikan%20Air%20Tawar%20Desa%20Ngloning%2C%20saya%20tertarik%20untuk%20memesan%20ikan%20segar%20untuk%20keperluan%20dagang%2Frestoran%20saya.%20Bisa%20minta%20info%20harga%20terbarunya%3F" target="_blank" rel="noopener noreferrer" className="text-blue-100/70 text-sm hover:text-blue-300 transition-colors">
+                                    <p className="text-blue-100/70 text-sm">+62 813-3077-4174</p>
+                                </a>
                             </div>
                         </div>
                     </div>
