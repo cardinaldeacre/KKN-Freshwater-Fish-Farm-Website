@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import TiltedCard from "@/components/ui/TiltedCard";
 import { ChevronRight, ShoppingCart } from "lucide-react";
-import imgLele from '@/assets/rame.png'; // Gambar Ikan Lele Segar
+import imgLele from '@/assets/lele.jpg';
 import imgPakan from '@/assets/img_landscape.jpeg';
 import imgNila from '@/assets/img_landscape.jpeg';
 
@@ -29,11 +29,6 @@ export default function Products() {
 
     return (
         <section className=" transition-colors duration-500">
-            <div className="flex items-center h-24 bg-blue-950 shadow-inner mb-12">
-                <h2 className="text-2xl md:text-3xl mx-auto font-bold text-white text-center">
-                    Produk Unggulan Kami
-                </h2>
-            </div>
 
             <div className="container mx-auto px-4 py-12">
                 <div className="flex flex-col lg:flex-row items-center gap-12 bg-blue-950 rounded-3xl p-8 mb-16 shadow-sm border border-slate-100 dark:border-blue-900/30">
