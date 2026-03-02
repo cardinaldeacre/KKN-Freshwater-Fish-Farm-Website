@@ -7,6 +7,7 @@ import Footer from "./layouts/Footer";
 import ScrollToTop from "./layouts/ScrollToTop";
 import About from "./pages/About";
 import Guideline from "./pages/Guideline";
+import Store from "./pages/Store";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tentang" element={<About />} />
-        <Route path="/produk" element={<h1>Produk</h1>} />
+        <Route path="/produk" element={<Store />} />
         <Route path="/panduan" element={<Guideline />} />
         <Route path="/kontak" element={<Contact />} />
       </Routes>
