@@ -2,7 +2,7 @@ import { Droplets, Sun, Wind, Box, Waves } from "lucide-react";
 
 export default function GuideStepOne() {
     return (
-        <section className="py-12 ">
+        <section className="pt-20 ">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto  rounded-[2.5rem] overflow-hidden shadow-xl border border-blue-100">
                     <div className="bg-blue-950 p-8 text-white">
@@ -20,7 +20,7 @@ export default function GuideStepOne() {
                         </p>
                     </div>
 
-                    <div className="p-8 md:p-12 space-y-10">
+                    <div className="p-6 md:p-6 sm:p2 space-y-1">
                         <div className="flex gap-6 group">
                             <div className="flex-none w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                                 <Droplets />

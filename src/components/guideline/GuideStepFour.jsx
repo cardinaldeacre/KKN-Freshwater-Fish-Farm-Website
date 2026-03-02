@@ -20,7 +20,7 @@ export default function GuideStepFour() {
                         </p>
                     </div>
 
-                    <div className="p-8 md:p-12 space-y-10">
+                    <div className="p-6 md:p-6 sm:p2 space-y-1">
                         <div className="flex gap-6 group">
                             <div className="flex-none w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                                 <Utensils size={24} />
