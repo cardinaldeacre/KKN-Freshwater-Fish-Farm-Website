@@ -16,6 +16,7 @@ import img100 from '@/assets/100.png'
 import imgkkn from '@/assets/kkn.png'
 import imglpm from '@/assets/lpm.png'
 import imgunida from '@/assets/unida.png'
+import { Link } from "react-router-dom"
 
 export default function Hero() {
     const images = [img1, img2, img1, img2, img1];
@@ -30,11 +31,11 @@ export default function Hero() {
         <section className="overflow-hidden py-10">
             <div className="container mx-auto px-4 py-11 lg:py-16">
                 <div className="flex justify-center md:justify-start animate-in fade-in slide-in-from-top-4 duration-700">
-                    <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
+                    <Link to="/panduan" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
                         <Badge className="rounded-full px-3 py-0.5 mr-3 bg-blue-600">Baru</Badge>
                         <span className="text-sm font-medium">Panduan Sukses Panen Ikan Lele 2026</span>
                         <ChevronRight className="ml-2 w-4 h-4" />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
@@ -47,14 +48,12 @@ export default function Hero() {
                             Kami fokus pada inovasi teknologi budidaya air tawar untuk membantu masyarakat mencapai kemandirian ekonomi dan pangan yang berkelanjutan.
                         </p>
                         <div className="animate-in fade-in slide-in-from-bottom-5 delay-300 duration-1000 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <Button size="lg" className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-500">
-                                Mulai Belajar
-                                <ChevronRight className="ml-2 h-5 w-5" />
-                            </Button>
-                            <Button size="lg" variant="outline" className="px-8 py-6 text-lg rounded-xl border-gray-300">
-                                <PlayCircle className="mr-2 h-5 w-5 text-blue-600" />
-                                Tonton Video
-                            </Button>
+                            <Link to="/panduan">
+                                <Button size="lg" className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-500">
+                                    Mulai Belajar
+                                    <ChevronRight className="ml-2 h-5 w-5" />
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="mt-8 animate-in fade-in slide-in-from-bottom-5 delay-500 duration-1000">
