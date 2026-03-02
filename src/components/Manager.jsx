@@ -35,7 +35,7 @@ export default function Manager() {
                 <h2 className="text-sm text-center font-bold text-blue-600 uppercase tracking-[0.3em] mb-3">
                     Struktur Organisasi
                 </h2>
-                <h3 className="text-3xl md:text-4xl text-center font-extrabold text-slate-900 dark:text-white mb-4">
+                <h3 className="text-3xl md:text-4xl text-center font-extrabold text-white mb-4">
                     Pengelola <span className="text-blue-600">Profesional</span> Kami
                 </h3>
                 <p className="text-slate-500 dark:text-slate-400 text-center">
