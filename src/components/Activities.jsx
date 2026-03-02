@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import imgNila from '@/assets/img_landscape.jpeg';
 import imgLele from '@/assets/rame.png';
+import { Link } from "react-router-dom";
 
 export default function Activities() {
     return (
@@ -19,10 +20,12 @@ export default function Activities() {
                             tetapi juga berkontribusi pada lingkungan yang lebih sehat dan ekonomi yang mandiri.
                         </p>
                         <div className="pt-4 flex justify-center lg:justify-start">
-                            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg shadow-xl shadow-blue-900/40">
-                                Baca Selengkapnya
-                                <ChevronRight className="ml-2 h-5 w-5 bg-white text-blue-600 rounded-full p-0.5" />
-                            </Button>
+                            <Link to="/panduan">
+                                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg shadow-xl shadow-blue-900/40">
+                                    Baca Selengkapnya
+                                    <ChevronRight className="ml-2 h-5 w-5 bg-white text-blue-600 rounded-full p-0.5" />
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 

@@ -30,14 +30,6 @@ export default function Contact() {
     return (
         <section className="overflow-hidden py-10">
             <div className="container mx-auto px-4 py-11 lg:py-16">
-                <div className="flex justify-center md:justify-start animate-in fade-in slide-in-from-top-4 duration-700">
-                    <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-blue-50 rounded-full dark:bg-gray-800 dark:text-white hover:bg-blue-100 transition-colors" role="alert">
-                        <Badge className="rounded-full px-3 py-0.5 mr-3 bg-blue-600">Baru</Badge>
-                        <span className="text-sm font-medium">Panduan Sukses Panen Ikan Lele 2026</span>
-                        <ChevronRight className="ml-2 w-4 h-4" />
-                    </a>
-                </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
                     <div className="flex flex-col gap-6 order-2 md:order-1">
                         <div className="flex flex-col justify-center space-y-8 order-2 md:order-1">
@@ -45,11 +37,11 @@ export default function Contact() {
                                 <Badge className="w-fit bg-blue-100 text-blue-700 hover:bg-blue-100 border-none px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
                                     Hubungi Kami
                                 </Badge>
-                                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-slate-900 dark:text-white text-center md:text-left">
+                                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-center md:text-left">
                                     Siap Menjalin <br />
                                     <span className="text-blue-600">Kemitraan Dagang</span>
                                 </h1>
-                                <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed text-center md:text-left">
+                                <p className="text-lg text-slate-500 max-w-2xl leading-relaxed text-center md:text-left">
                                     Apakah Anda pedagang atau pengelola restoran? Kami siap menyediakan pasokan ikan lele dan nila segar berkualitas tinggi langsung dari kolam Desa Ngloning.
                                 </p>
                             </div>
@@ -66,14 +58,14 @@ export default function Contact() {
                                 </Button>
                             </div>
 
-                            <div className="flex items-center gap-6 justify-center md:justify-start pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <div className="flex items-center gap-6 justify-center md:justify-start pt-4 border-t border-slate-800">
                                 <div className="text-center md:text-left">
-                                    <p className="text-2xl font-bold text-blue-950 dark:text-white">100%</p>
+                                    <p className="text-2xl font-bold">100%</p>
                                     <p className="text-xs text-slate-500 uppercase">Ikan Segar</p>
                                 </div>
                                 <div className="w-px h-8 bg-slate-200"></div>
                                 <div className="text-center md:text-left">
-                                    <p className="text-2xl font-bold text-blue-950 dark:text-white">Desa</p>
+                                    <p className="text-2xl font-bold ">Desa</p>
                                     <p className="text-xs text-slate-500 uppercase">Ngloning</p>
                                 </div>
                             </div>

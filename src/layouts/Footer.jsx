@@ -31,7 +31,7 @@ export default function Footer() {
                             <Button
                                 variant="outline"
                                 className="rounded-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all group"
-                                onClick={() => window.open('https://www.instagram.com/budidayaikan_desangloning', '_blank')}
+                                onClick={() => window.open('https://www.instagram.com/kdmp_ngloning', '_blank')}
                             >
                                 @budidayaikan_desangloning
                                 <ExternalLink className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
