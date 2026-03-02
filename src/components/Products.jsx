@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import TiltedCard from "@/components/ui/TiltedCard";
 import { ChevronRight, ShoppingCart } from "lucide-react";
 import imgLele from '@/assets/lele.jpg';
-import imgPakan from '@/assets/img_landscape.jpeg';
-import imgNila from '@/assets/img_landscape.jpeg';
+import imgPakan from '@/assets/pakan_lele.jpg';
+import imgAbon from '@/assets/abon_lele.jpg';
 
 export default function Products() {
     const products = [
@@ -22,7 +22,7 @@ export default function Products() {
         {
             title: "Abon Ikan Lele",
             description: "Abon ikan lele gurih dan lezat, cocok untuk camilan atau pelengkap nasi.",
-            image: imgNila,
+            image: imgAbon,
             isFeatured: false
         }
     ];
@@ -31,7 +31,7 @@ export default function Products() {
         <section className=" transition-colors duration-500">
 
             <div className="container mx-auto px-4 py-12">
-                <div className="flex flex-col lg:flex-row items-center gap-12 bg-blue-950 rounded-3xl p-8 mb-16 shadow-sm border border-slate-100 dark:border-blue-900/30">
+                <div className="flex flex-col lg:flex-row items-center gap-12 bg-blue-950 rounded-3xl p-4  mb-16 shadow-sm border border-slate-100 dark:border-blue-900/30">
                     <div className="w-full lg:w-1/2 flex justify-center">
                         <TiltedCard
                             imageSrc={products[0].image}
@@ -63,7 +63,11 @@ export default function Products() {
                             {products[0].description}
                         </p>
                         <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg shadow-lg">
+                            <a href=""></a>
+                            <Button
+                                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+                                onClick={() => window.open('https://wa.me/+6281330774174?text=Halo%20Pengelola%20Budiya%20Ikan%20Air%20Tawar%20Desa%20Ngloning%2C%20saya%20tertarik%20untuk%20memesan%20ikan%20segar%20untuk%20keperluan%20dagang%2Frestoran%20saya.%20Bisa%20minta%20info%20harga%20terbarunya%3F', '_blank')}
+                            >
                                 Pesan Sekarang
                                 <ShoppingCart className="ml-2 h-5 w-5" />
                             </Button>
@@ -89,8 +93,11 @@ export default function Products() {
                             </div>
                             <h4 className="text-xl font-bold text-blue-950 dark:text-white mb-2">{product.title}</h4>
                             <p className="text-gray-500 dark:text-gray-400 text-sm text-center mb-4">{product.description}</p>
-                            <Button variant="outline" className="rounded-full border-blue-600 text-blue-600 hover:bg-blue-50">
-                                Detail Produk
+                            <Button
+                                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+                                onClick={() => window.open('https://wa.me/+6281330774174?text=Halo%20Pengelola%20Budiya%20Ikan%20Air%20Tawar%20Desa%20Ngloning%2C%20saya%20tertarik%20untuk%20memesan%20ikan%20segar%20untuk%20keperluan%20dagang%2Frestoran%20saya.%20Bisa%20minta%20info%20harga%20terbarunya%3F', '_blank')}
+                            >
+                                Pesan Sekarang
                                 <ChevronRight className="ml-1 h-4 w-4" />
                             </Button>
                         </div>
