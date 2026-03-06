@@ -10,8 +10,12 @@ import LogoLoop from "./ui/LogoLoop"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { PlayCircle, ChevronRight } from "lucide-react"
-import img1 from '@/assets/img_landscape.jpeg'
-import img2 from '@/assets/rame.png'
+import img1 from '@/assets/one.jpeg'
+import img2 from '@/assets/two.jpeg'
+import img3 from '@/assets/three.jpeg'
+import img4 from '@/assets/four.jpeg'
+import img5 from '@/assets/five.jpeg'
+import img6 from '@/assets/six.jpeg'
 import img100 from '@/assets/100.png'
 import imgkkn from '@/assets/kkn.png'
 import imglpm from '@/assets/lpm.png'
@@ -19,7 +23,7 @@ import imgunida from '@/assets/unida.png'
 import { Link } from "react-router-dom"
 
 export default function Hero() {
-    const images = [img1, img2, img1, img2, img1];
+    const images = [img1, img2, img3, img4, img5, img6];
     const logos = [
         { src: img100, alt: "Logo 100" },
         { src: imgkkn, alt: "Logo KKN" },

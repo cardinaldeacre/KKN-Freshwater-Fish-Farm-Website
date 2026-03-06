@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import imgNila from '@/assets/img_landscape.jpeg';
-import imgLele from '@/assets/rame.png';
+import img1 from '@/assets/six.jpeg';
+import img2 from '@/assets/four.jpeg';
 import { Link } from "react-router-dom";
 
 export default function Activities() {
@@ -32,15 +32,15 @@ export default function Activities() {
                     <div className="order-1 lg:order-2 relative flex justify-center items-center h-87.5 md:h-112.5">
                         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-blue-900/50 overflow-hidden shadow-2xl z-10 animate-in fade-in zoom-in duration-1000">
                             <img
-                                src={imgNila}
+                                src={img1}
                                 alt="Ikan Nila Unggulan"
                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                             />
                         </div>
 
-                        <div className="absolute bottom-4 left-4 md:bottom-10 md:left-20 w-40 h-40 md:w-52 md:h-52 rounded-full border-8 border-blue-950 overflow-hidden shadow-2xl z-20 animate-in fade-in slide-in-from-left-10 duration-1000 delay-300">
+                        <div className="absolute bottom-2 left-2 md:bottom-10 md:left-20 w-40 h-40 md:w-52 md:h-52 rounded-full border-8 border-blue-950 overflow-hidden shadow-2xl z-20 animate-in fade-in slide-in-from-left-10 duration-1000 delay-300">
                             <img
-                                src={imgLele}
+                                src={img2}
                                 alt="Ikan Lele Unggulan"
                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                             />
