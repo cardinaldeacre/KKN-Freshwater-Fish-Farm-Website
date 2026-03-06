@@ -88,7 +88,10 @@ export default function Footer() {
 
                 <div className="border-t border-blue-900 pt-8 text-center">
                     <p className="text-blue-100/40 text-[10px] md:text-xs uppercase tracking-[0.3em]">
-                        &copy; 2026 KKN Kelompok 24 Ngloning | UNIDA Gontor | Design by Ionic_Mass
+                        &copy; 2026 KKN Kelompok 24 Ngloning | UNIDA Gontor | D
+                        <a href="https://github.com/cardinaldeacre" target="blank">
+                            esign by Ionic_Mass
+                        </a>
                     </p>
                 </div>
             </div>
